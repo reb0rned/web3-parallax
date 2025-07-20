@@ -1,0 +1,21 @@
+.main-content {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', 'Arial', sans-serif;
+  color: #fff;
+  background: #0a0b10;
+  min-height: 100vh;
+}
+
+.showcase {
+  margin-top: 1200px;
+}

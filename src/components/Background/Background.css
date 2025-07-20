@@ -1,0 +1,74 @@
+.background {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+  background: black;
+}
+
+.rocket {
+  position: fixed;
+  left: 20%;
+  bottom: 0;
+  transform: translateY(100%);
+  z-index: 3;
+  width: 200px;
+  height: 500px;
+  background: url('/logos/rocket.svg') no-repeat center;
+  background-size: contain;
+}
+
+.planet {
+  position: absolute;
+  right: 0;
+  top: 15vh;
+  width: 38vw;
+  z-index: 1;
+  will-change: transform;
+}
+
+@media (max-width: 900px) {
+  .planet {
+    width: 60vw;
+    max-width: 320px;
+    bottom: -20px;
+    right: -20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .planet {
+    width: 70vw;
+    max-width: 280px;
+    bottom: -40px;
+    right: -40px;
+  }
+}
+.top-gradient {
+  position: fixed;
+  top: 0;
+  left: 350px;
+  width: 500px;
+  max-width: 100%;
+  height: 400px;
+  z-index: 1;
+  pointer-events: none;
+  user-select: none;
+}
+
+.bottom-gradient {
+  position: fixed;
+  rotate: 120deg;
+  bottom: -200px;
+  left: -200px;
+  width: 700px;
+  max-width: 100%;
+  height: 500px;
+  z-index: 1;
+  pointer-events: none;
+  user-select: none;
+  will-change: transform;
+}

@@ -1,0 +1,38 @@
+.gradient-border-btn {
+  border: 2px solid transparent;
+  border-radius: 91px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  background: linear-gradient(#18181a, #18181a) padding-box,
+              linear-gradient(106.2deg, #963488 -12.33%, #FC6F32 50.28%, #FF4A59 114.17%) border-box;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  outline: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.btn-lg {
+  width: 240px;
+  height: 77px;
+  padding: 24px 48px;
+}
+
+.btn-sm {
+  width: 155px;
+  height: 54px;
+  padding: 16px 24px;
+}
+
+@media (max-width: 600px) {
+  .btn-lg,
+  .btn-sm {
+    width: 100%;
+    height: auto;
+    padding: 16px 24px;
+    font-size: 1rem;
+  }
+}
