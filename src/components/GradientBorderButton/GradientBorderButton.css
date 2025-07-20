@@ -36,3 +36,12 @@
     font-size: 1rem;
   }
 }
+
+.gradient-border-btn:hover,
+.gradient-border-btn:focus,
+.gradient-border-btn:active {
+  background: 
+    linear-gradient(106.2deg, #963488 -12.33%, #FC6F32 50.28%, #FF4A59 114.17%) padding-box, /* теперь фон — градиент */
+    linear-gradient(106.2deg, #963488 -12.33%, #FC6F32 50.28%, #FF4A59 114.17%) border-box; /* градиент рамки сохраняется */
+  color: #fff;
+}
